@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Snake game</title>
+</head>
+
+<body>
+    <section id="snakegame">
+        <div class="snake-game-text">SNAKE GAME</div>
+
+        <div class="popup-hello">
+            <div class="hellotoptext">WELCOME!</div>
+            <div class="hellomaintext">Use <span class="spanhello">W A S D</span> or <span class="spanhello">Arrow buttons</span> 
+                for change move direction <br>
+                <span>Press <span class="spanhello">START</span> to starting a game</span>
+            </div>
+            <button class="ok-popup">Ok</button>
+        </div>
+
+        <div class="popup-gameover">
+            <div class="gameovertoptext">GAME OVER</div>
+            <div class="gameovermaintext">
+                Your Score: <span class="yourscore"></span><br>
+                Best result: <span class="bestresult"></span>
+            </div>
+            <button class="gameover-playagain">Play again</button>
+        </div>
+
+        <div class="popup-win">
+            <div class="wintoptext">YOU WIN!</div>
+            <div class="winmaintext">
+                CONGRATULATIONS!
+            </div>
+            <button class="win-playagain">Play again</button>
+        </div>
+
+        <div class="popup-pause">
+            <div class="pausetoptext">GAME PAUSE</div>
+            <div class="gameovermaintext">
+            </div>
+            <button class="pause-continue">Continue</button>
+        </div>
+
+        <div class="gamedisplay"></div>
+
+        <div class="controller-and-start">
+            <div class="controller">
+                <button class="btn-controller" id="up">
+                    <span class="material-symbols-outlined">
+                        arrow_drop_up
+                    </span>
+                </button>
+                <div class="left-right-div">
+                    <button class="btn-controller"  id="left">
+                        <span class="material-symbols-outlined">
+                            arrow_left
+                        </span>
+                    </button>
+                    <div class="center-controller"></div>
+                    <button class="btn-controller"  id="right">
+                        <span class="material-symbols-outlined">
+                            arrow_right
+                        </span>
+                    </button>
+                </div>
+                <button class="btn-controller"  id="down">
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                </button>
+            </div>
+            <button id="start">START</button>
+            <button id="pause">PAUSE</button>
+        </div>
+    </section>
+
+    
+    <script src="display.js"></script>
+    <script src="snake.js"></script>
+    
+</body>
+
+</html>
